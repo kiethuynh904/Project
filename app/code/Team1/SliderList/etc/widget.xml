@@ -8,7 +8,62 @@
             <parameter name="slider" sort_order="10" visible="true" xsi:type="text">
                 <label>Title Slider</label>
             </parameter>
-            <parameter name="photo" xsi:type="block" visible="true" sort_order="10">
+            <parameter name="photo-1" xsi:type="block" visible="true" sort_order="10">
+                <label translate="true">Photo</label>
+                <description translate="true">Contact photo</description>
+                <block class="Team1\SliderList\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Choose Image...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+            <parameter name="photo-2" xsi:type="block" visible="true" sort_order="10">
+                <label translate="true">Photo</label>
+                <description translate="true">Contact photo</description>
+                <block class="Team1\SliderList\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Choose Image...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+            <parameter name="photo-3" xsi:type="block" visible="true" sort_order="10">
+                <label translate="true">Photo</label>
+                <description translate="true">Contact photo</description>
+                <block class="Team1\SliderList\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Choose Image...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+            <parameter name="photo-4" xsi:type="block" visible="true" sort_order="10">
+                <label translate="true">Photo</label>
+                <description translate="true">Contact photo</description>
+                <block class="Team1\SliderList\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Choose Image...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+            <parameter name="photo-5" xsi:type="block" visible="true" sort_order="10">
+                <label translate="true">Photo</label>
+                <description translate="true">Contact photo</description>
+                <block class="Team1\SliderList\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Choose Image...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+            <parameter name="photo-6" xsi:type="block" visible="true" sort_order="10">
                 <label translate="true">Photo</label>
                 <description translate="true">Contact photo</description>
                 <block class="Team1\SliderList\Block\Adminhtml\Widget\ImageChooser">
@@ -21,4 +76,57 @@
             </parameter>
         </parameters>
     </widget>
+    <widget class="Team1\SliderList\Block\Widget\Connect" id="team1_sliderlist_connect">
+        <label>Connect Melissa</label>
+        <description>Connect Melissa</description>
+        <parameters>
+            <parameter name="connect-title" sort_order="10" visible="true" xsi:type="text">
+                <label>Connect Title</label>
+            </parameter>
+            <parameter name="connect-content" sort_order="10" visible="true" xsi:type="text">
+                <label>Connect Content</label>
+            </parameter>
+        </parameters>
+    </widget>
+    <widget class="Team1\SliderList\Block\Widget\Social" id="team1_sliderlist_social">
+        <label>Social List</label>
+        <description>Social List</description>
+        <parameters>
+            <parameter name="social-1" xsi:type="block" visible="true" sort_order="10">
+                <label translate="true">Social Photo 1</label>
+                <description translate="true">Contact photo 1</description>
+                <block class="Team1\SliderList\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Choose Image...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+            <parameter name="social-2" xsi:type="block" visible="true" sort_order="10">
+                <label translate="true">Social Photo 2</label>
+                <description translate="true">Contact photo 2</description>
+                <block class="Team1\SliderList\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Choose Image...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+            <parameter name="social-3" xsi:type="block" visible="true" sort_order="10">
+                <label translate="true">Social Photo 3</label>
+                <description translate="true">Contact photo 3</description>
+                <block class="Team1\SliderList\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Choose Image...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+        </parameters>
+    </widget>
 </widgets>
+
+

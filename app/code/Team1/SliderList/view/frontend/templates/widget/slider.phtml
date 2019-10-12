@@ -1,9 +1,57 @@
+<h2 class='slider-title'><?php echo $block->getData('slider'); ?></h2>
 <?php if($block->getData('slider')): ?>
-    <h2 class='slider-item'><?php echo $block->getData('slider'); ?></h2>
+    <div class="slider-container">
 
-    <div class="my-slider">
-        <div><img src="<?php echo $block->getData('photo'); ?>" alt=""></div>
-        <div>your content</div>
-        <div>your content</div>
+        <div class="my-slider">
+            <div><img src="<?php echo $block->getData('photo-1'); ?>" alt=""></div>
+            <div><img src="<?php echo $block->getData('photo-2'); ?>" alt=""></div>
+            <div><img src="<?php echo $block->getData('photo-3'); ?>" alt=""></div>
+            <div><img src="<?php echo $block->getData('photo-4'); ?>" alt=""></div>
+            <div><img src="<?php echo $block->getData('photo-5'); ?>" alt=""></div>
+            <div><img src="<?php echo $block->getData('photo-6'); ?>" alt=""></div>
+        </div>
     </div>
 <?php endif; ?>
+
+<script>
+    require([
+        'jquery',
+        'slick'
+    ], function ($) {
+        jQuery(document).ready(function () {
+            jQuery(".my-slider").slick({
+                dots: false,
+                infinite: true,
+                speed: 300,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                arrows:true,
+                responsive: [
+                    {
+                        breakpoint: 1280,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    });
+</script>

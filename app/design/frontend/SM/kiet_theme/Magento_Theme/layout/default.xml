@@ -14,9 +14,11 @@
                 <argument name="logo_img_height" xsi:type="number">47</argument>
             </arguments>
         </referenceBlock>
-
         <referenceBlock name="header" remove="true"/>
         <move element="navigation.sections" destination="header-wrapper" after="logo"/>
-<!--        <move element="logo" destination="navigation.sections"/>-->
+        <referenceContainer name="page.bottom.container">
+            <container name="page.bottom" label="Before Page Footer" htmlTag="div" htmlClass="content"/>
+<!--            <continaer name="connect-melissa" label="Before Form Subscribe" htmlTag="div" htmlClass="connect-melissa"/>-->
+        </referenceContainer>
     </body>
 </page>
